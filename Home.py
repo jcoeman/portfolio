@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Josh Briscoe | Actuarial & Data Science Portfolio",
+    page_title="Joshua Briscoe | Actuarial & Data Science Portfolio",
     page_icon="📐",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -123,13 +123,12 @@ st.markdown(
 
 # ---------- Hero ----------
 st.markdown('<div class="hero-eyebrow">Actuarial &amp; Data Science — Portfolio</div>', unsafe_allow_html=True)
-st.markdown('<div class="hero-title">Pricing risk, one<br>hex and one class<br>at a time.</div>', unsafe_allow_html=True)
+st.markdown('<div class="hero-title">Risk, made<br>understandable.</div>', unsafe_allow_html=True)
 st.markdown(
     """
     <div class="hero-sub">
-    Applied work at the intersection of actuarial science and geospatial ML —
-    built with public data, open methodology, and an eye toward how these
-    techniques hold up under real underwriting constraints.
+    Projects at the intersection of actuarial science and data science, 
+    built with public data and open methodology.
     </div>
     """,
     unsafe_allow_html=True,
@@ -147,14 +146,10 @@ with col1:
             <span class="project-tag">Geospatial · ML</span>
             <div class="project-title">California Wildfire Hazard Model</div>
             <div class="project-desc">
-                A Random Forest hazard model over an H3 hex grid of California,
-                trained on public FPA-FOD fire records with SRTM terrain,
-                NLCD land cover, and MODIS NDVI covariates. Spatially-blocked
-                train/test splits avoid leakage; SHAP explains hex-level risk
-                drivers.
+                A Random Forest hazard model over a hex grid of California,
+                trained on public FPA-FOD fire records with terrain, land cover,
+                and vegetation covariates.
             </div>
-            <br>
-            <span class="status-soon">→ map coming soon</span>
         </div>
         """,
         unsafe_allow_html=True,
@@ -173,8 +168,6 @@ with col2:
                 matrix and get exposure-weighted, credibility-blended loss
                 cost estimates — with the full EPV/VHM decomposition shown.
             </div>
-            <br>
-            <span class="status-live">● live</span>
         </div>
         """,
         unsafe_allow_html=True,
@@ -194,8 +187,6 @@ with col3:
                 deductibles, XOL reinsurance layers, aggregate stop-loss,
                 and quota share to see retained vs. ceded loss cost.
             </div>
-            <br>
-            <span class="status-live">● live</span>
         </div>
         """,
         unsafe_allow_html=True,
